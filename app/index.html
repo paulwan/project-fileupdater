@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>项目文件更新器</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- All of the Node.js APIs are available in this renderer process. -->
+        <div class="info">
+            <p id="info">文件更新后，即可提交到 Git<br>
+            </p>
+        </div>
+        <div id="button" class="btn">
+            更新项目文件
+        </div>
+        <div class="filelist">
+            <p id="filelist">File-List here... </p>
+
+        </div>
+        <div class="system">
+            NodeJS:
+            <script>
+                document.write(process.versions.node)
+            </script> | Electron:
+            <script>
+                document.write(process.versions.electron)
+            </script>.
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    // You can also require other files to run in this process
+    require('coffee-script').register()
+    require('./app')
+</script>
+
+</html>

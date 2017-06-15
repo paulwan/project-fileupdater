@@ -1,0 +1,36 @@
+{
+    "name": "electron-filesync",
+    "productName": "FileSync",
+    "license": "CC0-1.0",
+    "homepage": "http://example.com",
+    "author": "GitHub",
+    "version": "0.1.0",
+    "description": "A minimal Electron application",
+    "main": "app/main.js",
+    "build": {
+        "appId": "com.example.filesync",
+        "files": [
+            "app/**/*",
+            "node_modules/**/*",
+            "package.json"
+        ],
+        "publish": null
+    },
+    "scripts": {
+        "release": "build",
+        "start": "electron ."
+    },
+    "repository": "",
+    "keywords": [
+        "Electron"
+    ],
+    "devDependencies": {
+        "electron": "^1.7.3",
+        "electron-builder": "^18.8.1"
+    },
+    "dependencies": {
+        "archiver": "^1.3.0",
+        "coffee-script": "^1.12.6",
+        "fs-jetpack": "^1.0.0"
+    }
+}
