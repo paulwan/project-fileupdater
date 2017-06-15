@@ -12,7 +12,6 @@ webFrame.setLayoutZoomLevelLimits(0, 0)
 
 # console.log jetpack.listAsync(__dirname + '/projects' )
 
-
 gen = (x) ->
   y = yield x * 2
   # console.log y
@@ -33,14 +32,13 @@ appUI.coffee
 dataModel.coffee
 
 
-
-
 ####
 
 startWork = ->
 
-  # 重置Electron里的 '.app' 以后的路径 ,防止为Electron 的 app包内路径
+  # App打包以后，需要重置Electron里的 '.app' 以后的路径 ,防止__dirname为Electron 的 app包内路径
   # app包内根目录路径，如果不处理是这样的: .../***.app/Contents/Resources/app.asar/app
+
   targetPath = __dirname.replace(/\/\w+\.app\/.+/g, '')
 
 
