@@ -12,4 +12,5 @@ class Project
   files: null
   isProject: null
 
+
   setup: () ->
