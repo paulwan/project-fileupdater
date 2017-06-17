@@ -10,3 +10,6 @@ class Project
 
   listText: null
   files: null
+  isProject: null
+
+  setup: () ->
