@@ -6,6 +6,7 @@ class Project
   getName: () ->
     @path.match(/\w+$/ig)[0]
 
-  http: null
+  # http: () ->
+
   listText: null
   files: null
