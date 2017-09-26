@@ -12,16 +12,16 @@ webFrame.setLayoutZoomLevelLimits(0, 0)
 
 # console.log jetpack.listAsync(__dirname + '/projects' )
 
-gen = (x) ->
-  y = yield x * 2
-  # console.log y
-  return y
-
-g = gen(2)
-# g.next()
-console.log g.next()
-console.log g.next(5)
-console.log g.next(8)
+# gen = (x) ->
+#   y = yield x * 2
+#   # console.log y
+#   return y
+#
+# g = gen(2)
+# # g.next()
+# console.log g.next()
+# console.log g.next(5)
+# console.log g.next(8)
 
 
 # var Promise = require("bluebird");
@@ -291,7 +291,7 @@ startWork = ->
       do creatProjREADMEmd = (item) ->
 
         MDString1 = " ###### Dashboard :  #{item.name} \n\n Publish Address： #{item.http} \n\n
-        | Documents | DesignSpec | Assets | Preview | MockData | Prototype | Resource | Review |\n| : ------: | : ------: | : ------: | : ------: | : ------: | : ------: | : ------: | : ------: |\n| -*.md | - folder | - folder | - folder | - file | - folder | - file | - folder |\n "
+        | Documents | DesignSpec | Assets | Preview | MockData | Prototype | Resource | Review |\n| : ------ | : ------ | : ------ | : ------ | : ------ | : ------ | : ------ | : ------ |\n| -*.md | - folder | - folder | - folder | - file | - folder | - file | - folder |\n "
 
         MDString2 = rotateObjArr(item.doc)
 
